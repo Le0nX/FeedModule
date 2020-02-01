@@ -10,6 +10,7 @@
 		146F3F6923E574C800ED40B0 /* FeedModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146F3F5F23E574C700ED40B0 /* FeedModule.framework */; };
 		146F3F6E23E574C800ED40B0 /* FeedModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F3F6D23E574C800ED40B0 /* FeedModuleTests.swift */; };
 		146F3F7023E574C800ED40B0 /* FeedModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 146F3F6223E574C700ED40B0 /* FeedModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		146F3F7A23E574DA00ED40B0 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F3F7923E574DA00ED40B0 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		146F3F6823E574C800ED40B0 /* FeedModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146F3F6D23E574C800ED40B0 /* FeedModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModuleTests.swift; sourceTree = "<group>"; };
 		146F3F6F23E574C800ED40B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		146F3F7923E574DA00ED40B0 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		146F3F5523E574C700ED40B0 = {
 			isa = PBXGroup;
 			children = (
+				146F3F7923E574DA00ED40B0 /* FeedItem.swift */,
 				146F3F6123E574C700ED40B0 /* FeedModule */,
 				146F3F6C23E574C800ED40B0 /* FeedModuleTests */,
 				146F3F6023E574C700ED40B0 /* Products */,
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					146F3F5E23E574C700ED40B0 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					146F3F6723E574C800ED40B0 = {
 						CreatedOnToolsVersion = 11.1;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				146F3F7A23E574DA00ED40B0 /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		146F3F7423E574C800ED40B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 28XXG6S5AU;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nefedov.denis.FeedModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		146F3F7523E574C800ED40B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 28XXG6S5AU;
@@ -388,6 +396,7 @@
 		146F3F7723E574C800ED40B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28XXG6S5AU;
 				INFOPLIST_FILE = FeedModuleTests/Info.plist;
@@ -406,6 +415,7 @@
 		146F3F7823E574C800ED40B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28XXG6S5AU;
 				INFOPLIST_FILE = FeedModuleTests/Info.plist;
